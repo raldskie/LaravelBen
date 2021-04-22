@@ -29,7 +29,6 @@
                 <td>{{ $member->name }}</td>
                 <td>{{ $member->email_verified_at ? 'Active' : 'Non Active' }}</td>
                 <td>{{ $member->created_at }}</td>
-                <td>{{ $member->getRole() }}</td>
             </tr>
             @endforeach
         </table>

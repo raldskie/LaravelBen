@@ -7,7 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Permission\Traits\HasRoles;
-use App\Models\Teams;
+// use App\Models\Teams;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class User extends Authenticatable
@@ -52,6 +52,7 @@ class User extends Authenticatable
     public function getRole() : string 
     {
         return __("roles.{$this->roles[0]->name}");
+        // return "Yuh";
     }
 
     public function createdAt(){
