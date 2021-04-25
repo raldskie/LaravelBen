@@ -24,16 +24,15 @@ class UserSeeder extends Seeder
                 'team_id' => $team->id,
                 'email' => 'test@example.com'
         ]);
-
         $user->assignRole('team_lead');
 
+        
         $user = factory(User::class)->create([
             'name' => 'IJ',
             'last_name' => 'Patrick',
             'team_id' => $team->id,
             'email' => 'test117@example.com'
         ]);
-
         $user->assignRole('user');
 
     }

@@ -52,7 +52,6 @@ class User extends Authenticatable
     public function getRole() : string 
     {
         return __("roles.{$this->roles[0]->name}");
-        // return "Yuh";
     }
 
     public function createdAt(){
