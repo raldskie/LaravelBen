@@ -17,23 +17,25 @@
             <p>{{ $team_name->name }}</p>
 
 
-        <table class="table-auto mt-8">
-        <tr>
-            <th class="w-1/2 text-left">Name</th>
-            <th class="w-1/4 text-left">Status</th>
-            <th class="w-1/4 text-left">Created At</th>
-            <th class="w-1/4 text-left">Role</th>
+        <table class="table-auto rounded-t-lg m-5 w-full mx-auto bg-gray-200 text-gray-800">
+        <tr class="text-left border-b-2 border-gray-300">
+            <th class="px-4 py-3">Name</th>
+            <th class="px-4 py-3">Status</th>
+            <th class="px-4 py-3">Created At</th>
+            <th class="px-4 py-3">Role</th>
         </tr>
-            @foreach($members as $member)
-            <tr>
-                <td>{{ $member->name }}</td>
-                <td>{{ $member->email_verified_at ? 'Active' : 'Non Active' }}</td>
-                <td>{{ $member->created_at }}</td>
+        
+        @foreach($members as $member)
+            <tr class="bg-gray-100 border-b border-gray-200">
+                <td class="px-4 py-3">{{ $member->name }}</td>
+                <td class="px-4 py-3">{{ $member->email_verified_at ? 'Active' : 'Non Active' }}</td>
+                <td class="px-4 py-3">{{ $member->created_at }}</td>
+                <td class="px-4 py-3">{{ $member->role }}</td>
             </tr>
-            @endforeach
+        @endforeach
+
         </table>
-
+        
         @endsection
-
     </body>
 </html>

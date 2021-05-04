@@ -7,7 +7,6 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Permission\Traits\HasRoles;
-// use App\Models\Teams;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class User extends Authenticatable
@@ -38,6 +37,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    /**
+    * @return string
+    */
+    public function getFullNameAttribute() : string 
+    {
+        return "{$this->name} {$this->last_name}";
+    }
 
     /**
     * @return BelongsTo
@@ -45,7 +52,7 @@ class User extends Authenticatable
     public function team() : BelongsTo{
         return $this->belongsTo(Teams::class);
     }
-
+ 
     /**
     * @return string
     */
