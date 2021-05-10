@@ -8,7 +8,7 @@
 
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
-    <body class="antialiased">
+    <body class="antialiased bg-gray-100">
 
         @extends('layouts.dashboard')
 
@@ -26,7 +26,7 @@
         </tr>
         
         @foreach($members as $member)
-            <tr class="bg-gray-100 border-b border-gray-200">
+            <tr class="bg-white border-b border-gray-200">
                 <td class="px-4 py-3">{{ $member->name }}</td>
                 <td class="px-4 py-3">{{ $member->email_verified_at ? 'Active' : 'Non Active' }}</td>
                 <td class="px-4 py-3">{{ $member->created_at }}</td>
