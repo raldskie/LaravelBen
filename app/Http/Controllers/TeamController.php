@@ -45,4 +45,18 @@ class TeamController extends Controller
             // 'team' => $team
         ]);
     }
+
+    // public function index() : View {
+
+    //     $team = auth()->user()->team()->with('members')->first();
+
+    //     $name = auth()->user()->name;
+    //     $team_name = auth()->user()->team;
+        
+    //     return view('team.index', [
+    //         'name' => $name,
+    //         'team_name' => $team_name,
+    //         'team' => $team
+    //     ]);
+    // }
 }

@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>New Age - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="{{ asset('css/landing-page.css') }}" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ asset('css/my-styles.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/my-styles.css') }}">
     </head>
-    <body class="antialiased">
-       <div class="bg-yellow-500 py-3 px-2 text-white">
-            Hello!
-       </div>
+    <body id="page-top">
+        <h1>Landing Page</h1>
     </body>
 </html>
